@@ -49,7 +49,7 @@ Exploratory Analysis
 Correlation Analysis
 ====================
 
-![](https://github.com/jackskmok/Prediction-Assignment-Writeup/blob/master/figure/unnamed-chunk-4-1.png)
+![](Practical_Machine_Learning_Project_Report_files/figure-markdown_github/unnamed-chunk-4-1.png)
 
 There are 53 predictor variables. Notice that clusters of higher positively correlated (darker blue) variables along the diagonal; this will also show the groupings of negatively correlated (darker red) variables throughout the dataset. This plot reveals that several groupings of variables with high correlations exist and that principal component analysis (PCA) may provide a suitable data reduction technique.
 
@@ -89,7 +89,39 @@ There are 53 predictor variables. Notice that clusters of higher positively corr
 
 ### Decision Tree
 
-![](https://github.com/jackskmok/Prediction-Assignment-Writeup/blob/master/figure/unnamed-chunk-6-1.png)
+![](Practical_Machine_Learning_Project_Report_files/figure-markdown_github/unnamed-chunk-6-1.png)
+
+    ## Confusion Matrix and Statistics
+    ## 
+    ##           Reference
+    ## Prediction    A    B    C    D    E
+    ##          A 1364  169   24   48   16
+    ##          B   60  581   46   79   74
+    ##          C   52  137  765  129  145
+    ##          D  183  194  125  650  159
+    ##          E   15   58   66   58  688
+    ## 
+    ## Overall Statistics
+    ##                                           
+    ##                Accuracy : 0.6879          
+    ##                  95% CI : (0.6758, 0.6997)
+    ##     No Information Rate : 0.2845          
+    ##     P-Value [Acc > NIR] : < 2.2e-16       
+    ##                                           
+    ##                   Kappa : 0.6066          
+    ##  Mcnemar's Test P-Value : < 2.2e-16       
+    ## 
+    ## Statistics by Class:
+    ## 
+    ##                      Class: A Class: B Class: C Class: D Class: E
+    ## Sensitivity            0.8148  0.51010   0.7456   0.6743   0.6359
+    ## Specificity            0.9390  0.94543   0.9047   0.8657   0.9590
+    ## Pos Pred Value         0.8415  0.69167   0.6230   0.4958   0.7774
+    ## Neg Pred Value         0.9273  0.88940   0.9440   0.9314   0.9212
+    ## Prevalence             0.2845  0.19354   0.1743   0.1638   0.1839
+    ## Detection Rate         0.2318  0.09873   0.1300   0.1105   0.1169
+    ## Detection Prevalence   0.2754  0.14274   0.2087   0.2228   0.1504
+    ## Balanced Accuracy      0.8769  0.72776   0.8252   0.7700   0.7974
 
 ### Model Evulation
 
