@@ -1,7 +1,7 @@
 ---
 title: "Project Report of Practical Machine Learning"
-author: "by Jack Mok"
-output: github_document
+author: "by Jack Mok" 
+output: html_document
 ---
 
 ## Introduction
@@ -126,6 +126,7 @@ modFitRP <- rpart(classe ~ ., data=TrainSet, method="class")
 fancyRpartPlot(modFitRP);
 predictRP <- predict(modFitRP, TestSet, type = "class")
 confusionRP <- confusionMatrix(predictRP, TestSet$classe)
+confusionRP
 ```
 
 ### Model Evulation 
