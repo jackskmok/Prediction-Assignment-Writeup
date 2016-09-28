@@ -49,7 +49,7 @@ Exploratory Analysis
 Correlation Analysis
 ====================
 
-![](https://github.com/jackskmok/Prediction-Assignment-Writeup/blob/masterfigure/unnamed-chunk-4-1.png)
+![](https://github.com/jackskmok/Prediction-Assignment-Writeup/blob/master/figure/unnamed-chunk-4-1.png)
 
 There are 53 predictor variables. Notice that clusters of higher positively correlated (darker blue) variables along the diagonal; this will also show the groupings of negatively correlated (darker red) variables throughout the dataset. This plot reveals that several groupings of variables with high correlations exist and that principal component analysis (PCA) may provide a suitable data reduction technique.
 
